@@ -1,0 +1,16 @@
+{
+  "baseUrl": "https://app.qa.saas.apptoku.com",
+  "env": {
+    "domain": "app.qa.saas.apptoku.com"
+  },
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  },
+  "videoUploadOnPasses": false,
+  "experimentalRunEvents": true,
+  "pageLoadTimeout": 10000,
+  "taskTimeout": 20000
+}
