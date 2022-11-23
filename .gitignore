@@ -4,3 +4,5 @@
 __pycache__/
 __pypackages__/
 .env
+services/webapp/.yarn
+services/docs/.yarn
