@@ -114,6 +114,18 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
           </MenuLink>
         </RoleAccess>
 
+        <RoleAccess>
+          <MenuLink to={generateLocalePath(RoutesConfig.ocrdemo)} onClick={closeSidebar}>
+            <FormattedMessage defaultMessage="OCR Demo" id="Home / ocrdemo link" />
+          </MenuLink>
+        </RoleAccess>
+
+        <RoleAccess>
+          <MenuLink to={generateLocalePath(RoutesConfig.ocractual)} onClick={closeSidebar}>
+            <FormattedMessage defaultMessage="OCR Actual" id="Home / ocractual link" />
+          </MenuLink>
+        </RoleAccess>
+
         {!isDesktop && (
           <RoleAccess>
             <MenuLink to={generateLocalePath(RoutesConfig.logout)} onClick={closeSidebar}>

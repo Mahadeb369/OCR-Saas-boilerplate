@@ -18,6 +18,7 @@ export const Home = () => {
       <H1>
         <FormattedMessage defaultMessage="Welcome!" id="Home / title" />
       </H1>
+      <h2>Hi, I'm Mahadeb from AIMonk</h2>
     </Container>
   );
 };

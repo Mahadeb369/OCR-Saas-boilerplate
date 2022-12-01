@@ -63,7 +63,7 @@ export const Header = (props: HeaderProps) => {
               defaultMessage: 'Go back home',
             })}
           >
-            <HeaderLogo />
+            <HeaderLogo />           
           </Link>
         </MenuContainer>
 

@@ -4,6 +4,7 @@ import { Breakpoint, media } from '../../theme/media';
 
 export const Container = styled.div`
   display: flex;
+  color: blue;
   flex-direction: column;
   align-items: center;
   justify-content: center;

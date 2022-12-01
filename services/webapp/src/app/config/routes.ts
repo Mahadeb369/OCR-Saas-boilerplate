@@ -36,6 +36,8 @@ const routes = {
   }),
   documents: 'documents',
   //<-- INJECT ROUTE DEFINITION -->
+  ocrdemo: 'ocr-demo',
+  ocractual: 'ocr-actual'
 };
 export const RoutesConfig = {
   ...routes,

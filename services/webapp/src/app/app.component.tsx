@@ -6,8 +6,10 @@ import { H1 } from '../theme/typography';
 import { AuthRoute } from '../shared/components/routes/authRoute';
 import { AnonymousRoute } from '../shared/components/routes/anonymousRoute';
 import { ActiveSubscriptionContext } from '../routes/finances/activeSubscriptionContext/activeSubscriptionContext.component';
+import OcrDemo from '../routes/ocrDemo/OcrDemo.component';
 import { LANG_PREFIX, RoutesConfig } from './config/routes';
 import { DEFAULT_LOCALE, translationMessages } from './config/i18n';
+
 import {
   CancelSubscription,
   ConfirmEmail,
@@ -22,6 +24,7 @@ import {
   Login,
   Logout,
   NotFound,
+  OcrActual,
   PrivacyPolicy,
   Profile,
   Signup,
@@ -30,6 +33,7 @@ import {
   TransactionHistory,
 } from './asyncComponents';
 import { ValidRoutesProviders } from './providers/validRoutesProvider';
+
 
 export const App = () => {
   const { pathname, search } = useLocation();
@@ -60,6 +64,8 @@ export const App = () => {
           <Route path={RoutesConfig.finances.paymentConfirm} element={<FinancesPaymentConfirm />} />
           <Route path={RoutesConfig.finances.history} element={<TransactionHistory />} />
           <Route path={RoutesConfig.documents} element={<Documents />} />
+          <Route path={RoutesConfig.ocrdemo} element={<OcrDemo></OcrDemo>}></Route>
+          <Route path={RoutesConfig.ocractual} element={<OcrActual></OcrActual>}></Route>
           <Route path="*" element={<NotFound />} />
         </Route>
         <Route path={LANG_PREFIX} element={<AuthRoute allowedRoles={Role.ADMIN} />}>
@@ -81,7 +87,6 @@ export const App = () => {
         </Route>
 
         {/* <-- INJECT ROUTE --> */}
-
         <Route
           path="*"
           element={
