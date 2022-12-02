@@ -1,12 +1,20 @@
-import React from 'react';
 import { Container } from './ocrActual.styles';
+import { Canvas } from './Canvas';
+import { SamplePicker } from './samplePickerSection';
+import { Upload } from './uploadSection';
+import { Url } from './urlSection';
+import { Header } from './headerSection';
 
-const OcrActual = () => {
+export const OcrActual = () => {
   return (
     <Container>
-      <h1>Hi from OCR actual.</h1>
+      <Header></Header>
+      <div>
+        <SamplePicker></SamplePicker>
+        <Upload></Upload>
+        <Url></Url>
+      </div>
+      <Canvas></Canvas>
     </Container>
   );
 };
-
-export { OcrActual };
