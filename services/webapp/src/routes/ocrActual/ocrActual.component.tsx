@@ -1,4 +1,5 @@
-import { Container } from './ocrActual.styles';
+import { Button } from '../../shared/components/forms/button';
+import { ButtonSection, Container, Main, P } from './ocrActual.styles';
 import { Canvas } from './Canvas';
 import { SamplePicker } from './samplePickerSection';
 import { Upload } from './uploadSection';
@@ -9,11 +10,15 @@ export const OcrActual = () => {
   return (
     <Container>
       <Header></Header>
-      <div>
-        <SamplePicker></SamplePicker>
+      <P>Select an image</P>
+      <Main>
         <Upload></Upload>
         <Url></Url>
-      </div>
+      </Main>
+      <SamplePicker></SamplePicker>
+      <ButtonSection>
+        <Button>Search</Button>
+      </ButtonSection>
       <Canvas></Canvas>
     </Container>
   );
