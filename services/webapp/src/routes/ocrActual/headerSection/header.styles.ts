@@ -1,14 +1,19 @@
 import styled from 'styled-components';
 import { Breakpoint, media } from '../../../theme/media';
 
+export const Container = styled.section`
+  max-width: 75rem;
+  margin: auto;
+`;
+
 export const Image = styled.img`
   border-radius: 5px;
-
+  flex: 20%;
   ${media(Breakpoint.MOBILE)`
-    width: 84vw
+    width: 80vw
   `};
   ${media(Breakpoint.TABLET)`
-    width: 440px;
+    width: 380px;
   `};
 `;
 
@@ -26,7 +31,9 @@ export const HeadingDiv = styled.div`
   `};
 `;
 
-export const TextDiv = styled.div``;
+export const TextDiv = styled.div`
+  flex: 20%;
+`;
 
 export const H1 = styled.p`
   font-size: 70px;

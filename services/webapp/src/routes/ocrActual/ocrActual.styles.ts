@@ -8,19 +8,29 @@ export const Container = styled.section`
 export const Main = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+
   ${media(Breakpoint.MOBILE)`
     flex-direction: column;
+     margin-top: 20px;
   `};
   ${media(Breakpoint.TABLET)`
     flex-direction: row;
+     margin-top: 30px;
   `};
 `;
 
 export const P = styled.p`
+  text-align: center;
   font-size: 23px;
-  margin: 21px 40px;
+  margin-top: 33px;
   color: #969696;
+  ${media(Breakpoint.MOBILE)`
+    margin-bottom: 0px;
+    padding-bottom: 0px
+  `};
+  ${media(Breakpoint.TABLET)`
+    margin-bottom: 55px;
+  `};
 `;
 
 export const ButtonSection = styled.div`

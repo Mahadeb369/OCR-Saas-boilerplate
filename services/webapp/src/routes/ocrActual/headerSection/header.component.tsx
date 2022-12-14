@@ -1,9 +1,8 @@
-import React from 'react';
-import { H1, HeadingDiv, Image, Line, P, TextDiv } from './header.styles';
+import { H1, HeadingDiv, Image, Line, P, TextDiv, Container } from './header.styles';
 
 export const Header = () => {
   return (
-    <div>
+    <Container>
       <HeadingDiv>
         <TextDiv>
           <H1>OCR</H1>
@@ -16,6 +15,6 @@ export const Header = () => {
         <Image src="https://i.ibb.co/xDWyMPZ/ocr2.png"></Image>
       </HeadingDiv>
       <Line></Line>
-    </div>
+    </Container>
   );
 };
